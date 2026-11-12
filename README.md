@@ -15,13 +15,13 @@ measurable retrieval quality), not scale.
 
 ```mermaid
 flowchart LR
-    C[corpus/*.md<br/>8 ADRs] -->|chunk by headings| I[ingest.py]
-    I -->|local embeddings<br/>fastembed ONNX| P[(Postgres 16<br/>+ pgvector HNSW)]
-    P -->|read-only session| S[search.py]
-    S --> M[server.py<br/>MCP, stdio]
-    S --> A[ask.py CLI]
-    S --> E[evaluate.py<br/>hit@k, MRR, threshold sweep]
-    M -->|search_docs / get_doc / list_docs| K[MCP client<br/>Claude Desktop, Claude Code...]
+    C["corpus/*.md<br/>8 ADRs"] -->|"chunk by headings"| I["ingest.py"]
+    I -->|"local embeddings<br/>fastembed ONNX"| P[("Postgres 16<br/>+ pgvector HNSW")]
+    P -->|"read-only session"| S["search.py"]
+    S --> M["server.py<br/>MCP, stdio"]
+    S --> A["ask.py CLI"]
+    S --> E["evaluate.py<br/>hit-at-k, MRR, threshold sweep"]
+    M -->|"search_docs / get_doc / list_docs"| K["MCP client<br/>Claude Desktop, Claude Code, ..."]
 ```
 
 | Piece | What it does |
