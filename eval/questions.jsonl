@@ -1,0 +1,18 @@
+{"id": "q01", "lang": "es", "query": "¿Con qué algoritmo se cifran los teléfonos y dónde viven las llaves?", "expected": ["ADR-016-cifrado-de-campo-postgres"]}
+{"id": "q02", "lang": "es", "query": "¿Cómo se busca a un paciente por teléfono si el dato está cifrado?", "expected": ["ADR-016-cifrado-de-campo-postgres"]}
+{"id": "q03", "lang": "es", "query": "¿Por qué hay dos agentes separados para el administrador y el paciente?", "expected": ["ADR-004-aislamiento-admin-paciente"]}
+{"id": "q04", "lang": "es", "query": "¿Cómo se evita que la memoria de conversación del admin se mezcle con la del paciente?", "expected": ["ADR-004-aislamiento-admin-paciente"]}
+{"id": "q05", "lang": "es", "query": "¿Por qué la búsqueda de citas y el reagendado son herramientas distintas?", "expected": ["ADR-005-tools-lectura-escritura-separadas"]}
+{"id": "q06", "lang": "es", "query": "¿Qué cálculos no se le deben delegar al modelo de lenguaje, como la zona horaria o el día de la semana?", "expected": ["ADR-005-tools-lectura-escritura-separadas"]}
+{"id": "q07", "lang": "es", "query": "¿Cancelar una cita la borra de la base de datos o solo cambia su estado?", "expected": ["ADR-006-tool-cancelar-cita-diseno"]}
+{"id": "q08", "lang": "es", "query": "¿Qué pasa si se intenta borrar de Google Calendar un evento que ya no existe?", "expected": ["ADR-006-tool-cancelar-cita-diseno"]}
+{"id": "q09", "lang": "es", "query": "¿Cómo se detecta que dos citas se traslapan, por ejemplo 10:00-10:15 contra 10:05-10:20?", "expected": ["ADR-007-fix-traslape-tool-agendar-cita"]}
+{"id": "q10", "lang": "es", "query": "¿Cuántos reintentos y qué timeout se configuraron para las llamadas a Calendar?", "expected": ["ADR-008-retry-timeout-calendar"]}
+{"id": "q11", "lang": "es", "query": "¿Qué mensaje recibe el paciente cuando falla algo técnico y quién se entera del error?", "expected": ["ADR-013-silencio-paciente-errores-tecnicos"]}
+{"id": "q12", "lang": "es", "query": "¿En qué formato se guarda el teléfono y cuándo se le agrega el 1 extra de WhatsApp?", "expected": ["ADR-014-normalizacion-telefono-por-canal"]}
+{"id": "q13", "lang": "en", "query": "How are phone numbers encrypted at rest and what happens if the key is missing?", "expected": ["ADR-016-cifrado-de-campo-postgres"]}
+{"id": "q14", "lang": "en", "query": "Why are read and write tools split into separate tools for the scheduling agent?", "expected": ["ADR-005-tools-lectura-escritura-separadas"]}
+{"id": "o01", "lang": "es", "query": "¿Cuántos días de vacaciones tiene un empleado nuevo?", "expected": []}
+{"id": "o02", "lang": "es", "query": "Receta de mole poblano para ocho personas", "expected": []}
+{"id": "o03", "lang": "en", "query": "What is the capital of Australia?", "expected": []}
+{"id": "o04", "lang": "es", "query": "¿Cuál es el precio de las acciones de Tesla hoy?", "expected": []}

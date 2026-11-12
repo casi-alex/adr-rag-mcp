@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragdemo"
+version = "0.1.0"
+description = "Demo de RAG con pgvector y servidor MCP de solo lectura sobre ADRs sanitizados"
+requires-python = ">=3.10"
+dependencies = [
+    "psycopg[binary]>=3.1",
+    "pgvector>=0.3",
+    "numpy",
+    "fastembed>=0.4",
+]
+
+[project.optional-dependencies]
+mcp = ["mcp>=2.3,<3"]  # 2.x renombró FastMCP a MCPServer
+dev = [
+    "pytest>=8",
+    "mcp>=2.3,<3",
+    # Postgres embebido con pgvector para correr las pruebas sin Docker.
+    # Sin wheel para Python 3.13; en ese caso usa RAGDEMO_TEST_DSN.
+    "pgserver>=0.1.4; python_version < '3.13'",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

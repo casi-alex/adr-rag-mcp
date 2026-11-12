@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.env
+# Cache de modelos de embeddings (cientos de MB)
+.cache/
+fastembed_cache/

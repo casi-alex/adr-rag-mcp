@@ -1,0 +1,412 @@
+{
+  "model": "jinaai/jina-embeddings-v2-base-es",
+  "metrics": {
+    "k": 3,
+    "in_scope": 14,
+    "hit_at_1": 1.0,
+    "hit_at_k": 1.0,
+    "mrr": 1.0
+  },
+  "score_gap": {
+    "in_scope_min": 0.434579461812973,
+    "out_of_scope_max": 0.23280900716781616,
+    "separable": true
+  },
+  "sweep": [
+    {
+      "threshold": 0.111,
+      "in_scope_answered": 14,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 4,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.114,
+      "in_scope_answered": 14,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 2,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.136,
+      "in_scope_answered": 14,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 2,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.233,
+      "in_scope_answered": 14,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.435,
+      "in_scope_answered": 13,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.463,
+      "in_scope_answered": 13,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.57,
+      "in_scope_answered": 10,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.581,
+      "in_scope_answered": 9,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.583,
+      "in_scope_answered": 9,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.603,
+      "in_scope_answered": 7,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.611,
+      "in_scope_answered": 6,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.619,
+      "in_scope_answered": 6,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.62,
+      "in_scope_answered": 5,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.657,
+      "in_scope_answered": 3,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.682,
+      "in_scope_answered": 3,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.694,
+      "in_scope_answered": 2,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    },
+    {
+      "threshold": 0.713,
+      "in_scope_answered": 0,
+      "in_scope_total": 14,
+      "out_of_scope_leaked": 0,
+      "out_of_scope_total": 4
+    }
+  ],
+  "results": [
+    {
+      "id": "q01",
+      "query": "¿Con qué algoritmo se cifran los teléfonos y dónde viven las llaves?",
+      "expected": [
+        "ADR-016-cifrado-de-campo-postgres"
+      ],
+      "ranked_docs": [
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-007-fix-traslape-tool-agendar-cita"
+      ],
+      "top_score": 0.4633554220199585,
+      "rank": 1
+    },
+    {
+      "id": "q02",
+      "query": "¿Cómo se busca a un paciente por teléfono si el dato está cifrado?",
+      "expected": [
+        "ADR-016-cifrado-de-campo-postgres"
+      ],
+      "ranked_docs": [
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-013-silencio-paciente-errores-tecnicos"
+      ],
+      "top_score": 0.5698824098671204,
+      "rank": 1
+    },
+    {
+      "id": "q03",
+      "query": "¿Por qué hay dos agentes separados para el administrador y el paciente?",
+      "expected": [
+        "ADR-004-aislamiento-admin-paciente"
+      ],
+      "ranked_docs": [
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-014-normalizacion-telefono-por-canal"
+      ],
+      "top_score": 0.6028291583061218,
+      "rank": 1
+    },
+    {
+      "id": "q04",
+      "query": "¿Cómo se evita que la memoria de conversación del admin se mezcle con la del paciente?",
+      "expected": [
+        "ADR-004-aislamiento-admin-paciente"
+      ],
+      "ranked_docs": [
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-014-normalizacion-telefono-por-canal"
+      ],
+      "top_score": 0.6108901136583033,
+      "rank": 1
+    },
+    {
+      "id": "q05",
+      "query": "¿Por qué la búsqueda de citas y el reagendado son herramientas distintas?",
+      "expected": [
+        "ADR-005-tools-lectura-escritura-separadas"
+      ],
+      "ranked_docs": [
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-007-fix-traslape-tool-agendar-cita",
+        "ADR-014-normalizacion-telefono-por-canal"
+      ],
+      "top_score": 0.6191461086273193,
+      "rank": 1
+    },
+    {
+      "id": "q06",
+      "query": "¿Qué cálculos no se le deben delegar al modelo de lenguaje, como la zona horaria o el día de la semana?",
+      "expected": [
+        "ADR-005-tools-lectura-escritura-separadas"
+      ],
+      "ranked_docs": [
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-007-fix-traslape-tool-agendar-cita",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-014-normalizacion-telefono-por-canal"
+      ],
+      "top_score": 0.6201330012122693,
+      "rank": 1
+    },
+    {
+      "id": "q07",
+      "query": "¿Cancelar una cita la borra de la base de datos o solo cambia su estado?",
+      "expected": [
+        "ADR-006-tool-cancelar-cita-diseno"
+      ],
+      "ranked_docs": [
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-007-fix-traslape-tool-agendar-cita",
+        "ADR-016-cifrado-de-campo-postgres"
+      ],
+      "top_score": 0.6944157092099106,
+      "rank": 1
+    },
+    {
+      "id": "q08",
+      "query": "¿Qué pasa si se intenta borrar de Google Calendar un evento que ya no existe?",
+      "expected": [
+        "ADR-006-tool-cancelar-cita-diseno"
+      ],
+      "ranked_docs": [
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-007-fix-traslape-tool-agendar-cita"
+      ],
+      "top_score": 0.7127199981427196,
+      "rank": 1
+    },
+    {
+      "id": "q09",
+      "query": "¿Cómo se detecta que dos citas se traslapan, por ejemplo 10:00-10:15 contra 10:05-10:20?",
+      "expected": [
+        "ADR-007-fix-traslape-tool-agendar-cita"
+      ],
+      "ranked_docs": [
+        "ADR-007-fix-traslape-tool-agendar-cita",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-006-tool-cancelar-cita-diseno"
+      ],
+      "top_score": 0.5830703129214245,
+      "rank": 1
+    },
+    {
+      "id": "q10",
+      "query": "¿Cuántos reintentos y qué timeout se configuraron para las llamadas a Calendar?",
+      "expected": [
+        "ADR-008-retry-timeout-calendar"
+      ],
+      "ranked_docs": [
+        "ADR-008-retry-timeout-calendar",
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-007-fix-traslape-tool-agendar-cita"
+      ],
+      "top_score": 0.6821557879447937,
+      "rank": 1
+    },
+    {
+      "id": "q11",
+      "query": "¿Qué mensaje recibe el paciente cuando falla algo técnico y quién se entera del error?",
+      "expected": [
+        "ADR-013-silencio-paciente-errores-tecnicos"
+      ],
+      "ranked_docs": [
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-008-retry-timeout-calendar"
+      ],
+      "top_score": 0.656540036201477,
+      "rank": 1
+    },
+    {
+      "id": "q12",
+      "query": "¿En qué formato se guarda el teléfono y cuándo se le agrega el 1 extra de WhatsApp?",
+      "expected": [
+        "ADR-014-normalizacion-telefono-por-canal"
+      ],
+      "ranked_docs": [
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-004-aislamiento-admin-paciente"
+      ],
+      "top_score": 0.5698869311674751,
+      "rank": 1
+    },
+    {
+      "id": "q13",
+      "query": "How are phone numbers encrypted at rest and what happens if the key is missing?",
+      "expected": [
+        "ADR-016-cifrado-de-campo-postgres"
+      ],
+      "ranked_docs": [
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-007-fix-traslape-tool-agendar-cita"
+      ],
+      "top_score": 0.434579461812973,
+      "rank": 1
+    },
+    {
+      "id": "q14",
+      "query": "Why are read and write tools split into separate tools for the scheduling agent?",
+      "expected": [
+        "ADR-005-tools-lectura-escritura-separadas"
+      ],
+      "ranked_docs": [
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-007-fix-traslape-tool-agendar-cita",
+        "ADR-008-retry-timeout-calendar"
+      ],
+      "top_score": 0.5806323289871216,
+      "rank": 1
+    },
+    {
+      "id": "o01",
+      "query": "¿Cuántos días de vacaciones tiene un empleado nuevo?",
+      "expected": [],
+      "ranked_docs": [
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-005-tools-lectura-escritura-separadas",
+        "ADR-006-tool-cancelar-cita-diseno"
+      ],
+      "top_score": 0.23280900716781616,
+      "rank": null
+    },
+    {
+      "id": "o02",
+      "query": "Receta de mole poblano para ocho personas",
+      "expected": [],
+      "ranked_docs": [
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-004-aislamiento-admin-paciente",
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-007-fix-traslape-tool-agendar-cita"
+      ],
+      "top_score": 0.11391966044902802,
+      "rank": null
+    },
+    {
+      "id": "o03",
+      "query": "What is the capital of Australia?",
+      "expected": [],
+      "ranked_docs": [
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-014-normalizacion-telefono-por-canal",
+        "ADR-016-cifrado-de-campo-postgres",
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-004-aislamiento-admin-paciente"
+      ],
+      "top_score": 0.13617900013923645,
+      "rank": null
+    },
+    {
+      "id": "o04",
+      "query": "¿Cuál es el precio de las acciones de Tesla hoy?",
+      "expected": [],
+      "ranked_docs": [
+        "ADR-006-tool-cancelar-cita-diseno",
+        "ADR-007-fix-traslape-tool-agendar-cita",
+        "ADR-013-silencio-paciente-errores-tecnicos",
+        "ADR-008-retry-timeout-calendar",
+        "ADR-005-tools-lectura-escritura-separadas"
+      ],
+      "top_score": 0.11133167147636414,
+      "rank": null
+    }
+  ]
+}
